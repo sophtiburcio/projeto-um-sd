@@ -1,0 +1,21 @@
+# Pin Mapping Constraints for Spartan-3E FPGA Board
+
+# DIP Switch Inputs
+NET "bit0" LOC = V8;
+NET "bit1" LOC = U10;
+NET "bit2" LOC = U8;
+NET "bit3" LOC = T9;
+
+# LED Outputs (Result & Flags)
+NET "led0" LOC = R20; # Result Bit 0
+NET "led1" LOC = T19; # Result Bit 1
+NET "led2" LOC = U20; # Result Bit 2
+NET "led3" LOC = U19; # Result Bit 3
+NET "led4" LOC = V19; # Flag Z (Zero)
+NET "led5" LOC = V20; # Flag N (Negative)
+NET "led6" LOC = Y22; # Flag C (Carry)
+NET "led7" LOC = W21; # Flag V (Overflow)
+
+# Clock and Push-button Inputs
+NET "clk_50MHz" LOC = E12; # 50MHz On-Board Oscillator
+NET "btn_step"  LOC = U15; # Step Button for FSM Advancement
